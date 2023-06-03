@@ -1,13 +1,8 @@
 import React from "react";
-import Home from "./pages/Home";
+import RoutesApp from "./routes";
 
-
-function App() {
-  return (
-    <>
-      <Home />      
-    </>
-  )
+export default function App() {
+    return (
+        <RoutesApp />
+    )
 }
-
-export default App
