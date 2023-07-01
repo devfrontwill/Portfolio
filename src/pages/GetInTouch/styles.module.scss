@@ -84,6 +84,8 @@
 
         .input_msg {
             display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
             width: 21.875rem;
             height: 7.5rem;
             padding: 0rem 0.75rem;

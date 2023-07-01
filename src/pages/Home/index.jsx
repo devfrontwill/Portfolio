@@ -1,5 +1,6 @@
 import React from "react";
 import { LiaFileDownloadSolid } from 'react-icons/lia';
+import { PiCaretRightBold } from 'react-icons/pi';
 import styles from './styles.module.scss';
 import profile from '../../assets/profile.png';
 import currilum from '../../assets/curriculum.pdf';
@@ -37,11 +38,15 @@ function Home() {
 
                         <div className={styles.btn_container}>
                             <a href={currilum} download='currilum_devfrontwill={ Wiliam Roza }'>
-                                Baixar CV 
+                                Baixar CV
                                 <LiaFileDownloadSolid
-                                className={styles.icon}
-                                size={24}
-                                color="#FFF"
+                                    className={styles.icon}
+                                    size={20}
+                                    color="#FFF"
+                                />
+                                <PiCaretRightBold
+                                    size={17}
+                                    color="#FFF"
                                 />
                             </a>
                         </div>

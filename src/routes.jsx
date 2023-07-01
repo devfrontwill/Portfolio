@@ -5,7 +5,7 @@ import CaseStudies from './pages/CaseStudies';
 import Testmonials from './pages/Testimonials';
 import RecentWork from './pages/RecentWork';
 import GetInTouch from './pages/GetInTouch';
-import Error from "./pages/Error/error";
+import Error from "./pages/Error";
 
 const router = createBrowserRouter([
     {

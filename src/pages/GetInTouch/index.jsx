@@ -24,7 +24,7 @@ function GetInTouch() {
                         type="tel" required placeholder="Ex. 21 98765-4321" minLength={11} maxLength={11} />
 
                     <label htmlFor="message">Mensagem :</label>
-                    <input className={styles.input_msg} type="text" required placeholder="Digite aqui sua mensagem" />
+                    <textarea className={styles.input_msg} type="text" required placeholder="Digite aqui sua mensagem :" />
 
                     <button className={styles.btn_submit} type="submit">
                         Submit
