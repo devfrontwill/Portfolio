@@ -9,17 +9,26 @@
     .container_list {
         display: flex;
         width: 100%;
+        justify-content: center;
+        align-items: center;
 
         .list_item {
             display: flex;
             flex-direction: row;
-            align-items: flex-start;
+            align-items: center;
             width: 20%;
             z-index: 0;
             justify-content: center;
             padding: 1em 2em;
             color: #9C9C9C;
+            text-decoration: none;
             cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+                font-size: 1.1rem;
+                transition: 0.3s;
+            }
         }
     }
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { LiaFileDownloadSolid } from 'react-icons/lia';
 import { PiCaretRightBold } from 'react-icons/pi';
 import styles from './styles.module.scss';
@@ -12,11 +13,9 @@ function Home() {
                 <header>
                     <nav>
                         <ul className={styles.container_list}>
-                            <li className={styles.list_item} >Home</li>
-                            <li className={styles.list_item} >Case Studies</li>
-                            <li className={styles.list_item} >Testimonials</li>
-                            <li className={styles.list_item} >Recent work</li>
-                            <li className={styles.list_item} >Get in Touch</li>
+                            <Link to="/" className={styles.list_item} >Home </Link>
+                            <Link to="/projetos" className={styles.list_item} >Projetos </Link>                            
+                            <Link to="/contato" className={styles.list_item} >Contato </Link>
                         </ul>
                     </nav>
                 </header>

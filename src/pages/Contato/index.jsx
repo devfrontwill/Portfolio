@@ -3,12 +3,12 @@ import { PiCaretRightBold } from 'react-icons/pi';
 import styles from './styles.module.scss';
 
 
-function GetInTouch() {
+function Contato() {
     return (
         <>
             <div className={styles.container} >
                 <h1 className={styles.title} >
-                    Get in Touch
+                    Entre em contato
                 </h1>
                 <span className={styles.subtitle} >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -24,7 +24,7 @@ function GetInTouch() {
                         type="tel" required placeholder="Ex. 21 98765-4321" minLength={11} maxLength={11} />
 
                     <label htmlFor="message">Mensagem :</label>
-                    <textarea className={styles.input_msg} type="text" required placeholder="Digite aqui sua mensagem :" />
+                    <textarea className={styles.input_msg} type="text" required placeholder="Digite aqui sua mensagem . . ." />
 
                     <button className={styles.btn_submit} type="submit">
                         Submit
@@ -41,4 +41,4 @@ function GetInTouch() {
     )
 }
 
-export default GetInTouch;
+export default Contato;
