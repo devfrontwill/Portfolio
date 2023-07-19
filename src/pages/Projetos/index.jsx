@@ -1,91 +1,37 @@
-import React from "react";
-import { PiCaretRightBold } from 'react-icons/pi';
-import styles from './styles.module.scss';
-import work1 from '../../assets/work1.png'
+import React, { useState } from "react";
+import ProjetosWeb from '../../components/ProjetosWeb';
+import ProjetosMobile from "../../components/ProjetosMobile";
 
 
 function Projetos() {
+    const [activeTab, setActiveTab] = useState('web');
+
+    const handleTabChange = (tab) => {
+        setActiveTab(tab);
+    }
+
     return (
-        <section className={styles.container}>
-
-            <h1 className={styles.title} >
-                Projetos
-            </h1>
-            <span className={styles.subtitle}>Solving user & business problems since last 15+ years.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </span>
-
-            <div className={styles.container__work__right} >
-                <h1 className={styles.title__work__right} >Work Name Here</h1>
-
-                <span className={styles.subtitle__work__right}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.
-                </span>
-
-                <div className={styles.container__img}>
-                    <img src={work1} alt="foto ilustrativa do projeto" className="img__right" />
-                </div>
-
-
-                <div className={styles.container__btn__right}>
-                    <a className={styles.btn__right}>Visualizar projeto
-                        <PiCaretRightBold
-                            size={18}
-                        />
-                    </a>
-                </div>
-
-                
-
+        <div>
+            <div>
+                <button onClick={() => handleTabChange('web')}>Projetos Web</button>
+                <button onClick={() => handleTabChange('mobile')}>Projetos Mobile</button>
             </div>
 
-            <div className={styles.container__work__right} >
-                <h1 className={styles.title__work__right} >Work Name Here</h1>
+            <div>
+                {activeTab === 'web' && (
+                    <div>                        
+                        <ProjetosWeb />
+                    </div>
+                )}
 
-                <span className={styles.subtitle__work__right}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.
-                </span>
-
-                <div className={styles.container__img}>
-                    <img src={work1} alt="foto ilustrativa do projeto" className="img__right" />
-                </div>
-
-
-                <div className={styles.container__btn__right}>
-                    <a className={styles.btn__right}>Visualizar projeto
-                        <PiCaretRightBold
-                            size={18}
-                        />
-                    </a>
-                </div>
-
-                
+                {activeTab === 'mobile' && (
+                    <div>                        
+                        <ProjetosMobile />
+                    </div>
+                )}
 
             </div>
-
-            <div className={styles.container__work__right} >
-                <h1 className={styles.title__work__right} >Work Name Here</h1>
-
-                <span className={styles.subtitle__work__right}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.
-                </span>
-
-                <div className={styles.container__img}>
-                    <img src={work1} alt="foto ilustrativa do projeto" className="img__right" />
-                </div>
-
-
-                <div className={styles.container__btn__right}>
-                    <a className={styles.btn__right}>Visualizar projeto
-                        <PiCaretRightBold
-                            size={18}
-                        />
-                    </a>
-                </div>
-
-                
-
-            </div>
-        </section>
+        </div>
     )
 }
 
