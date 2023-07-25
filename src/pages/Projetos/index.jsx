@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ProjetosWeb from '../../components/ProjetosWeb';
 import ProjetosMobile from "../../components/ProjetosMobile";
+import styles from './styles.module.scss';
 
 
 function Projetos() {
@@ -12,20 +13,20 @@ function Projetos() {
 
     return (
         <div>
-            <div>
-                <button onClick={() => handleTabChange('web')}>Projetos Web</button>
-                <button onClick={() => handleTabChange('mobile')}>Projetos Mobile</button>
+            <div className={styles.container_button}>
+                <button className={styles.button_tabweb} onClick={() => handleTabChange('web')}>Projetos Web</button>
+                <button className={styles.button_tabmobile} onClick={() => handleTabChange('mobile')}>Projetos Mobile</button>
             </div>
 
-            <div>
+            <div className={styles.container_projects} >
                 {activeTab === 'web' && (
-                    <div>                        
+                    <div className={styles.webprojects} >                        
                         <ProjetosWeb />
                     </div>
                 )}
 
                 {activeTab === 'mobile' && (
-                    <div>                        
+                    <div className={styles.mobileprojects} >                        
                         <ProjetosMobile />
                     </div>
                 )}
