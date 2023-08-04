@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=IBM+Plex+Mono:wght@700&family=Montserrat:ital,wght@1,400;1,600&family=Raleway:wght@800&display=swap");
+.container {
+  background-color: #080808;
+  width: 99.975vw;
+  height: 89.975vh;
+}
+.container .title {
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2.125rem;
+  font-family: Raleway;
+  font-weight: 800;
+  padding-top: 5rem;
+}
+.container .subtitle {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 2rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.00875rem;
+  font-size: 0.875rem;
+  font-family: IBM Plex Mono;
+  color: #9C9C9C;
+}
+.container .form_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.3125rem;
+  padding: 1rem 2rem;
+}
+.container .form_container label {
+  color: #FFF;
+  font-size: 0.75rem;
+  font-family: IBM Plex Mono;
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  left: -9.575rem;
+}
+.container .form_container .input_field {
+  display: flex;
+  width: 21.875rem;
+  height: 2.5rem;
+  padding: 0rem 0.75rem;
+  align-items: center;
+  gap: 0.75rem;
+  border-radius: 4px;
+  border: 1px solid #D8D8D8;
+  background: #F8F8F8;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.container .form_container .input_field::-moz-placeholder {
+  display: flex;
+  height: 2.25rem;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 0 0;
+  color: #757575;
+  font-size: 0.75rem;
+  font-family: IBM Plex Mono;
+  line-height: 1.3125rem;
+}
+.container .form_container .input_field:-ms-input-placeholder {
+  display: flex;
+  height: 2.25rem;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 0 0;
+  color: #757575;
+  font-size: 0.75rem;
+  font-family: IBM Plex Mono;
+  line-height: 1.3125rem;
+}
+.container .form_container .input_field::placeholder {
+  display: flex;
+  height: 2.25rem;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 0 0;
+  color: #757575;
+  font-size: 0.75rem;
+  font-family: IBM Plex Mono;
+  line-height: 1.3125rem;
+}
+.container .form_container .input_msg {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 21.875rem;
+  height: 7.5rem;
+  padding: 0rem 0.75rem;
+  align-items: flex-start;
+  gap: 0.75rem;
+  border-radius: 4px;
+  border: 1px solid #D8D8D8;
+  background: #F8F8F8;
+  margin-top: 0.5rem;
+}
+.container .form_container .input_msg::-moz-placeholder {
+  display: flex;
+  flex-wrap: wrap;
+  height: 2.25rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 1 0 0;
+  color: #757575;
+  font-size: 0.75rem;
+  font-family: IBM Plex Mono;
+  line-height: 1.3125rem;
+}
+.container .form_container .input_msg:-ms-input-placeholder {
+  display: flex;
+  flex-wrap: wrap;
+  height: 2.25rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 1 0 0;
+  color: #757575;
+  font-size: 0.75rem;
+  font-family: IBM Plex Mono;
+  line-height: 1.3125rem;
+}
+.container .form_container .input_msg::placeholder {
+  display: flex;
+  flex-wrap: wrap;
+  height: 2.25rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 1 0 0;
+  color: #757575;
+  font-size: 0.75rem;
+  font-family: IBM Plex Mono;
+  line-height: 1.3125rem;
+}
+.container .form_container .btn_submit {
+  display: flex;
+  width: 23.575rem;
+  padding: 1rem 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 4px;
+  border: 1px solid #62BA1B;
+  background: #3F8E00;
+  box-shadow: 0px 8px 30px 0px rgba(63, 142, 0, 0.3);
+  color: #FFF;
+  font-size: 0.875rem;
+  font-family: IBM Plex Mono;
+  font-weight: 700;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9C9C9C;
+  font-size: 0.875rem;
+  font-family: IBM Plex Mono;
+  letter-spacing: 0.00875rem;
+  width: 99.975vw;
+  height: 4.375rem;
+  flex-shrink: 0;
+  background: #1B1B1B;
+}/*# sourceMappingURL=styles.module.css.map */

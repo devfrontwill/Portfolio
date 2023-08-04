@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ProjetosWeb from '../../components/ProjetosWeb';
 import ProjetosMobile from "../../components/ProjetosMobile";
 import styles from './styles.module.scss';
+import Menu from '../../components/Menu';
 
 
 function Projetos() {
@@ -12,7 +13,8 @@ function Projetos() {
     }
 
     return (
-        <div>
+        <div className={styles.container} >
+            <Menu />
             <div className={styles.container_button}>
                 <button className={styles.button_tabweb} onClick={() => handleTabChange('web')}>Projetos Web</button>
                 <button className={styles.button_tabmobile} onClick={() => handleTabChange('mobile')}>Projetos Mobile</button>

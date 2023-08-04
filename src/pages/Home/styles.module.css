@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=IBM+Plex+Mono:wght@700&family=Montserrat:ital,wght@1,400;1,600&display=swap");
+html::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: #0721e7;
+}
+
+html::-webkit-scrollbar-track {
+  background: #080808;
+}
+
+.container {
+  background-color: #080808;
+  width: 99.975vw;
+  height: 180vh;
+}
+.container .container_img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+.container .container_img img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  box-shadow: 0 0 65px 0 rgba(7, 33, 231, 0.972);
+  border: 1px solid rgb(7, 33, 231);
+}
+.container .container_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  padding: 2rem 10rem;
+}
+.container .container_text .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 48px;
+  font-weight: bold;
+  color: #FFF;
+  margin: 2rem 0 0.5rem 0;
+  padding: 2rem 0;
+}
+.container .container_text .subtitle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  line-height: 20px;
+  letter-spacing: 2px;
+  color: #9C9C9C;
+}
+.container .container_text .btn_container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 21px 64px;
+  gap: 10px;
+  width: 307.89px;
+  height: 63px;
+  background: #0721e7;
+  border: 1px solid #0721e7;
+  box-shadow: 0px 8px 30px rgba(7, 33, 231, 0.5);
+  border-radius: 4px;
+}
+.container .container_text a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 164px;
+  height: 21px;
+  font-family: "Courgette", cursive;
+  font-family: "IBM Plex Mono", monospace;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  background: #0721e7;
+  color: #FFF;
+  border: none;
+  text-decoration: none;
+}
+.container .container_text a:hover {
+  transition: 0.5s;
+  text-decoration: underline;
+  -webkit-animation: shake 0.7s;
+          animation: shake 0.7s;
+}
+@-webkit-keyframes shake {
+  10%, 90% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(3px, 0, 0);
+  }
+  30%, 50%, 70% {
+    trasnform: translate3d(-5px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(5px, 0, 0);
+  }
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(3px, 0, 0);
+  }
+  30%, 50%, 70% {
+    trasnform: translate3d(-5px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(5px, 0, 0);
+  }
+}
+.container .container_text a .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0.2rem;
+}
+.container .container_text a .icon:hover {
+  padding-left: 0.5rem;
+}
+.container .container_h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  margin: 0.5em -8em;
+  gap: 10px;
+  width: 93px;
+  height: 18px;
+  left: 180px;
+  top: 557px;
+}
+.container .container_h3 h3 {
+  display: flex;
+  align-items: flex-end;
+  width: 110px;
+  height: 18px;
+  font-style: normal;
+  font-size: 0.875rem;
+  font-family: "Courgette", cursive;
+  font-family: "IBM Plex Mono", monospace;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #FFF;
+}
+.container .container_footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 3.75rem;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-shrink: 0;
+}
+.container .container_footer .footer_item {
+  width: 5rem;
+  height: 3.75rem;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 1px solid #1B1B1B;
+  color: #FFF;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 160vw;
+    height: 305vh;
+  }
+  .container .container_footer {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .container .container_footer .footer_item {
+    width: 1.5rem;
+    height: 1rem;
+  }
+}/*# sourceMappingURL=styles.module.css.map */

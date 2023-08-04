@@ -3,6 +3,7 @@ import styles from './styles.module.scss';
 import work1 from '../../assets/work1.png'
 import Button from "../Button";
 
+
 function ProjetosWeb() {
     return (
         <section className={styles.container}>
@@ -24,9 +25,9 @@ function ProjetosWeb() {
                     <img src={work1} alt="foto ilustrativa do projeto" className="img__right" />
                 </div>
 
-
                 <Button title="Visualizar Projeto" />
-
+                {/* <div  style={{backgroundColor:"#FF4136"}} className={styles.btn} >
+    </div>*/}
 
 
             </div>
