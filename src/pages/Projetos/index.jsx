@@ -12,9 +12,9 @@ function Projetos() {
         setActiveTab(tab);
     }
 
-    return (
+    return (<>
+        <Menu />
         <div className={styles.container} >
-            <Menu />
             <div className={styles.container_button}>
                 <button className={styles.button_tabweb} onClick={() => handleTabChange('web')}>Projetos Web</button>
                 <button className={styles.button_tabmobile} onClick={() => handleTabChange('mobile')}>Projetos Mobile</button>
@@ -22,19 +22,20 @@ function Projetos() {
 
             <div className={styles.container_projects} >
                 {activeTab === 'web' && (
-                    <div className={styles.webprojects} >                        
+                    <div>
                         <ProjetosWeb />
                     </div>
                 )}
 
                 {activeTab === 'mobile' && (
-                    <div className={styles.mobileprojects} >                        
+                    <div>
                         <ProjetosMobile />
                     </div>
                 )}
 
             </div>
         </div>
+    </>
     )
 }
 

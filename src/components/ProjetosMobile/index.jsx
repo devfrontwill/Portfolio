@@ -14,10 +14,10 @@ function ProjetosMobile () {
             <span className={styles.subtitle}>Solving user & business problems since last 15+ years.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </span>
 
-            <div className={styles.container__work__right} >
-                <h1 className={styles.title__work__right} >Work Name Here</h1>
+            <div className={styles.container__work} >
+                <h1 className={styles.title__work} >Work Name Here</h1>
 
-                <span className={styles.subtitle__work__right}>
+                <span className={styles.subtitle__work}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.
                 </span>
 
@@ -26,16 +26,16 @@ function ProjetosMobile () {
                 </div>
 
 
-                <Button title="Visualizar Projeto" />
+                <Button title="Acessar Projeto" />
 
                 
 
             </div>
 
-            <div className={styles.container__work__right} >
-                <h1 className={styles.title__work__right} >Work Name Here</h1>
+            <div className={styles.container__work} >
+                <h1 className={styles.title__work} >Work Name Here</h1>
 
-                <span className={styles.subtitle__work__right}>
+                <span className={styles.subtitle__work}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.
                 </span>
 
@@ -44,16 +44,16 @@ function ProjetosMobile () {
                 </div>
 
 
-                <Button title="Visualizar Projeto" />
+                <Button title="Acessar Projeto" />
 
                 
 
             </div>
 
-            <div className={styles.container__work__right} >
+            <div className={styles.container__work} >
                 <h1 className={styles.title__work__right} >Work Name Here</h1>
 
-                <span className={styles.subtitle__work__right}>
+                <span className={styles.subtitle__work}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna.
                 </span>
 
@@ -62,7 +62,7 @@ function ProjetosMobile () {
                 </div>
 
 
-                <Button title="Visualizar Projeto" />
+                <Button title="Acessar Projeto" />
 
                 
 

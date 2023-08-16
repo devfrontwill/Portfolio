@@ -1,4 +1,4 @@
-    .container {
+    body {
         background-color: #080808;
     }
 
@@ -24,9 +24,9 @@
 
             border-radius: 0.25rem;
             border: none;
-            background: #3F8E00;
-            border: 1px solid #62BA1B;
-            box-shadow: 0px 8px 30px  rgba(63, 142, 0, 0.5);
+            background: #0721e7;
+            border: 1px solid #0721e7;
+            box-shadow: 0px 8px 30px rgba(7, 33, 231, 0.5);
 
 
             color: #FFF;
@@ -49,11 +49,9 @@
         }
     }
 
-    .container_projects {
-
-
-
-        .styles.webprojects {}
-
-        .styles.mobileprojects {}
+    @media screen and (max-width: 768px) {
+        .container_button {
+            width: 115%;
+            height: 10vh;
+        }
     }

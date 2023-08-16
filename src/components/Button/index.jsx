@@ -7,8 +7,8 @@ function Button({ title }) {
 
 
     return (
-        <div className={styles.container__btn__right} >
-            <a className={styles.btn__right} >{title}
+        <div className={styles.container__btn} >
+            <a className={styles.btn} >{title}
                 <PiCaretRightBold
                     size={18}
                 />
