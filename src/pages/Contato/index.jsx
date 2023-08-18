@@ -71,7 +71,7 @@ export default function Contato() {
                         value={email}
                     />
 
-                    <label htmlFor="phone">Telefone :</label>
+                    <label htmlFor="tel">Telefone :</label>
                     <input
                         className={styles.input_field}
                         type="tel"
@@ -81,6 +81,7 @@ export default function Contato() {
                         maxLength={11}
                         onChange={(e) => setPhoneNumber(e.target.value)}
                         value={phoneNumber}
+                        //pattern="^\([1-9]{2}\) (?:[2-8]|9[1-9])[0-9]{3}\-[0-9]{4}$"
                     />
 
                     <label htmlFor="message">Mensagem :</label>
@@ -90,7 +91,7 @@ export default function Contato() {
                         required 
                         placeholder="Digite aqui sua mensagem . . ."
                         onChange={(e) => setMessage(e.target.value)}
-                        value={message}
+                        value={message}                        
 
                     />
 
