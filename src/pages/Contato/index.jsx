@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import emailjs from '@emailjs/browser';
 import { PiCaretRightBold } from 'react-icons/pi';
 import styles from './styles.module.scss';
 import Menu from '../../components/Menu';
-import emailjs from '@emailjs/browser';
 
 
 export default function Contato() {
+
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
@@ -13,7 +14,7 @@ export default function Contato() {
 
     function sendEmail(e) {
         e.preventDefault()
-        
+
 
         const templateParams = {
             from_name: name,
@@ -23,18 +24,18 @@ export default function Contato() {
         }
 
         emailjs.send("service_ijyl298", "template_5go7gxq", templateParams, "eu1uNvi4jNgYeKwDe")
-        .then((response) => {
-            
-            alert("Mensagem enviada com sucesso.")
+            .then((response) => {
 
-            setName('');
-            setEmail('');
-            setPhoneNumber('');
-            setMessage('');
+                alert("Mensagem enviada com sucesso !");
 
-        }, (err) => {
-            alert("Ops, ocorreu um erro, a mensagem falhou ao ser enviada por favor tente novamente.")
-        })
+                setName('');
+                setEmail('');
+                setPhoneNumber('');
+                setMessage('');
+
+            }, (err) => {
+                alert("Ops, ocorreu um erro, a mensagem falhou ao ser enviada por favor tente novamente.")
+            })
 
     }
 
@@ -55,16 +56,19 @@ export default function Contato() {
                     <input
                         className={styles.input_field}
                         type="text"
+                        minLength={3}
                         placeholder="Digite seu nome"
                         required
                         onChange={(e) => setName(e.target.value)}
                         value={name}
+
                     />
 
                     <label htmlFor="Email">Email :</label>
                     <input
                         className={styles.input_field}
                         type="email"
+                        minLength={15}
                         placeholder="example@example.com"
                         required
                         onChange={(e) => setEmail(e.target.value)}
@@ -74,35 +78,36 @@ export default function Contato() {
                     <label htmlFor="tel">Telefone :</label>
                     <input
                         className={styles.input_field}
-                        type="tel"
-                        required
-                        placeholder="Ex. 21 98765-4321"
-                        minLength={11}
+                        type="number"
                         maxLength={11}
+                        placeholder="Ex. 21987654321"
                         onChange={(e) => setPhoneNumber(e.target.value)}
                         value={phoneNumber}
-                        //pattern="^\([1-9]{2}\) (?:[2-8]|9[1-9])[0-9]{3}\-[0-9]{4}$"
                     />
+
 
                     <label htmlFor="message">Mensagem :</label>
                     <textarea
                         className={styles.input_msg}
                         type="text"
-                        required 
+                        name="message"
+                        required
                         placeholder="Digite aqui sua mensagem . . ."
                         onChange={(e) => setMessage(e.target.value)}
-                        value={message}                        
+                        value={message}
 
                     />
 
-                    <button className={styles.btn_submit} type="submit">
+                    <button className={styles.btn_submit} type="submit" >
                         Submit
                         <PiCaretRightBold
                             size={17}
                             color="#FFF"
                         />
                     </button>
+                    
                 </form>
+
             </div>
 
             <footer className={styles.copyright} >© Copyright Devfrontwill - 2023 All rights reserved</footer>
