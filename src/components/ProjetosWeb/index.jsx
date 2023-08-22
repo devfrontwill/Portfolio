@@ -25,7 +25,7 @@ function ProjetosWeb() {
                     <img src={work1} alt="foto ilustrativa do projeto" className="img__right" />
                 </div>
 
-                <Button title="Acessar Projeto" />
+                <Button title="Acessar Projeto" href={"https://github.com/devfrontwill/devlink-shortener"} />
 
 
             </div>

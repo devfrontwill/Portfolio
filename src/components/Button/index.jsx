@@ -1,14 +1,13 @@
-import React, { useState } from "react";
 import { PiCaretRightBold } from 'react-icons/pi';
 import styles from './styles.module.scss';
 
 
-function Button({ title }) {
+function Button({ title, href }) {
 
 
     return (
         <div className={styles.container__btn} >
-            <a className={styles.btn} >{title}
+            <a className={styles.btn} href={href}>{title}
                 <PiCaretRightBold
                     size={18}
                 />
