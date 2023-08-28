@@ -1,9 +1,13 @@
 .container__btn {
     margin-top: -.5rem;
+    margin-left: 5rem;
     padding-bottom: 2rem;
+    
+    
 
     .btn {
         display: inline-flex;
+        justify-content: center;
         align-items: center;
         padding: 0.625rem 1.5rem;
         gap: 0.625rem;
