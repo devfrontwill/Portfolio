@@ -48,22 +48,23 @@
 }
 
 .container__img {
+    height: 290px;
+    overflow: hidden;
+    border-radius: 8px;
     margin-bottom: 2rem;
     
 
     img {
-        
-        width: 30rem;
-
+        width: 490px;
+        object-fit: cover;
+        transition: transform 0.8s;
+        height: 100%;
         flex-shrink: 0;
         border-radius: 7px;
         margin-bottom: -2.5rem;
 
-        &:hover {
-            -moz-transform: scale(1.1);
-            -webkit-transform: scale(1.1);
-            transform: scale(1.025);
-            transition: 0.18s;
+        &:hover {            
+            transform: scale(1.5);            
         }
     }
 }

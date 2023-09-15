@@ -13,10 +13,6 @@ export default function Card({ title, subtitle, image }) {
             <div className={styles.container__img}>
                 <img src={image} alt="foto ilustrativa do projeto" />
             </div>
-
-            
-
-
         </div>
     )
 }
