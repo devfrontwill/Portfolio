@@ -1,22 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=IBM+Plex+Mono:wght@700&family=Montserrat:ital,wght@1,400;1,600&display=swap');
 
-html::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
 
-html::-webkit-scrollbar-thumb {
-    border-radius: 50px;
-    background: #0721e7;
-}
 
-html::-webkit-scrollbar-track {
-    background: #080808;
-}
+
 
 .container {
     background-color: #080808;
-    width: 99.975vw;
+    width: 99vw;
     height: 180vh;
 
 
@@ -29,12 +19,8 @@ html::-webkit-scrollbar-track {
 
 
         img {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 350px;
-            height: 350px;
+            width: 300px;
+            height: 300px;
             border-radius: 100%;
             box-shadow: 0 0 65px 0 rgba(7, 33, 231, 0.972);
             border: 1px solid rgb(7, 33, 231);
@@ -48,8 +34,8 @@ html::-webkit-scrollbar-track {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        margin: 2rem 0;
-        padding: 2rem 10rem;
+        margin-top: -2rem;
+        padding: 2rem 1.3rem;
 
 
         .title {
@@ -126,18 +112,18 @@ html::-webkit-scrollbar-track {
                 90% {
                     transform: translate3d(-2px, 0, 0)
                 }
-            
+
                 20%,
                 80% {
                     transform: translate3d(3px, 0, 0)
                 }
-            
+
                 30%,
                 50%,
                 70% {
                     trasnform: translate3d(-5px, 0, 0)
                 }
-            
+
                 40%,
                 60% {
                     transform: translate3d(5px, 0, 0)
@@ -198,6 +184,7 @@ html::-webkit-scrollbar-track {
         align-items: flex-start;
         gap: 1.5rem;
         flex-shrink: 0;
+        margin-bottom: 10rem;
 
         .footer_item {
             width: 5rem;
@@ -216,10 +203,12 @@ html::-webkit-scrollbar-track {
     }
 }
 
+
+
 @media screen and (max-width: 768px) {
     .container {
-        width: 160vw;
-        height: 305vh;
+        width: 95vw;
+        height: 210vh;
 
         .container_footer {
             margin-left: 1rem;
@@ -229,6 +218,22 @@ html::-webkit-scrollbar-track {
                 width: 1.5rem;
                 height: 1rem;
             }
-        }        
+        }
     }
+
+    
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #0721e7;
+}
+
+html::-webkit-scrollbar-track {
+    background: #080808;
 }

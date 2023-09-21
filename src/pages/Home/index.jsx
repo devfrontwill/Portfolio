@@ -6,6 +6,7 @@ import profile from '../../assets/profile.png';
 import currilum from '../../assets/curriculum.pdf';
 import Menu from '../../components/Menu';
 
+
 function Home() {
     return (
         <>
@@ -68,6 +69,8 @@ function Home() {
                         </nav>
                     </section>
                 </footer>
+
+
             </div>
 
         </>
