@@ -18,7 +18,7 @@
         font-style: normal;
         font-weight: 800;
         line-height: normal;
-        margin-top: 120rem;
+        margin-top: 53rem;
         margin-bottom: 2rem;
     }
 
@@ -151,5 +151,35 @@
     40%,
     60% {
         transform: translate3d(5px, 0, 0)
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container{
+
+        .title{
+            margin-top: 52rem;
+            margin-left: 1rem;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+
+        .title{
+            margin-top: -10rem;
+            
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container{
+
+        .title{
+            margin-top: 52rem;
+        }
     }
 }

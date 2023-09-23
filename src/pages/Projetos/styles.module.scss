@@ -53,5 +53,11 @@
         .container_button {
             width: 115%;
             height: 10vh;
+
+            .button_tabweb,
+            .button_tabmobile {
+                width: 35%;
+                margin-right: 1.5rem;
+            }
         }
     }

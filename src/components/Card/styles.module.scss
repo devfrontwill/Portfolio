@@ -3,8 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 130%;
-    margin: 7rem 0 2rem 7rem;
+    width: 99vw;
+    margin: 7rem 0 2rem 6.3rem;
 
 
 }
@@ -71,7 +71,7 @@
 
 @media screen and (max-width: 768px) {
     .container__work {
-        padding-left: 3rem;
-        
+        padding-left: 3rem;        
     }
+
 }

@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import { PiCaretRightBold } from 'react-icons/pi';
 import styles from './styles.module.scss';
 import Menu from '../../components/Menu';
-import Footer from '../../components/Footer';
+
 
 
 export default function Contato() {

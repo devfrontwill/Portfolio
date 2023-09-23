@@ -40,17 +40,6 @@ function ProjetosMobile() {
                 <img className={styles.btn} src={playstorebtn} />
             </a>
 
-            <Card
-                title="DevCalc IMC"
-                subtitle="Uma aplicação simples mas dinâmica feita apenas para praticar e exercitar o uso do Hook UseState do Reactjs, neste projeto eu criei uma calculadora de IMC com layout simples, porém responsivo."
-                image={work3}
-            />
-            <Button title="Acessar Projeto" href={"https://github.com/devfrontwill/calc-imc_reactjs"} />
-
-            <a className= {styles.container__btn} href="https://play.google.com/store/apps/details?id=com.devfrontwill.appmovies" target="_blank" >
-                <img className={styles.btn} src={playstorebtn} />
-            </a>
-
         </section>
     )
 }

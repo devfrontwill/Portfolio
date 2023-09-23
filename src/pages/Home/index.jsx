@@ -5,6 +5,15 @@ import styles from './styles.module.scss';
 import profile from '../../assets/profile.png';
 import currilum from '../../assets/curriculum.pdf';
 import Menu from '../../components/Menu';
+import Javascript from '../../assets/javascript-logo.png';
+import Reactlogo from '../../assets/react-logo.png';
+import ReactNativelogo from '../../assets/react-native-logo.png';
+import Sass from '../../assets/sass-logo.png';
+import Git from '../../assets/git-logo.png';
+import Github from '../../assets/github-logo.png';
+import Typescript from '../../assets/typescript-logo.png';
+import Scrum from '../../assets/scrum-logo.png';
+import StyledComponents from '../../assets/styled-logo.png';
 
 
 function Home() {
@@ -43,31 +52,47 @@ function Home() {
                             </div>
 
                         </div>
-
-
-
-                    </section>
-                </main>
-
-                <footer>
-                    <section className={styles.container_h3}>
-                        <h3>Worked with:</h3>
                     </section>
 
                     <section>
+                        <h3 className={styles.footer__title}>Tecnologias que trabalho e possuo conhecimento :</h3>
                         <nav>
                             <ul className={styles.container_footer} >
-                                <li className={styles.footer_item} >JavaScript</li>
-                                <li className={styles.footer_item} >React</li>
-                                <li className={styles.footer_item} >React Native</li>
-                                <li className={styles.footer_item} >Sass</li>
-                                <li className={styles.footer_item} >Git & Github</li>
-                                <li className={styles.footer_item} >TypeScript</li>
-                                <li className={styles.footer_item} >Scrum</li>
-                                <li className={styles.footer_item} >Styled Components</li>
+                                <li className={styles.footer_item} >
+                                    <img className={styles.logo} alt="javascript logo" src={Javascript} />
+                                </li>
+                                <li className={styles.footer_item} >
+                                    <img className={styles.logo} alt="react logo" src={Reactlogo} />
+                                </li>
+                                <li className={styles.footer_item} >
+                                    <img className={styles.logo} alt="react native logo" src={ReactNativelogo} />
+                                </li>
+                                <li className={styles.footer_item} >
+                                    <img className={styles.logo} alt="sass logo" src={Sass} />
+                                </li>
+                                <li className={styles.footer_item} >
+                                    <img className={styles.logo} alt="git logo" src={Git} />
+                                </li>
+                                <li className={styles.footer_item} >
+                                    <img className={styles.logo} alt="github logo" src={Github} />
+                                </li>
+                                <li className={styles.footer_item} >
+                                    <img className={styles.logo} alt="typescript logo" src={Typescript} />
+                                </li>
+                                <li className={styles.footer_item} >
+                                    <img className={styles.logo} alt="scrum agile logo" src={Scrum} />
+                                </li>
+                                <li className={styles.footer_item} >
+                                    <img className={styles.logo} alt="styled components logo" src={StyledComponents} />
+                                </li>
                             </ul>
                         </nav>
                     </section>
+                </main>
+
+
+                <footer className={styles.copyright} >
+                    © Copyright Devfrontwill - 2023 All rights reserved
                 </footer>
 
 

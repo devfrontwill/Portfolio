@@ -18,7 +18,6 @@
         font-style: normal;
         font-weight: 800;
         line-height: normal;
-        margin-top: 90rem;
         margin-bottom: 2rem;
     }
 
@@ -104,6 +103,38 @@
                 transform: scale(1.025);
                 transition: 0.18s;
             }
+        }
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .container{
+
+        .title{
+            margin-top: 80rem;
+            margin-left: 1rem;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+
+        .title{
+            margin-top: 15rem;
+            margin-left: 1rem;
+            
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container{
+
+        .title{
+            margin-top: 80rem;
         }
     }
 }
