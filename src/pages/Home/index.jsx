@@ -5,6 +5,7 @@ import styles from './styles.module.scss';
 import profile from '../../assets/profile.png';
 import currilum from '../../assets/curriculum.pdf';
 import Menu from '../../components/Menu';
+import { BsLinkedin, BsGithub, BsInstagram } from 'react-icons/bs';
 import Javascript from '../../assets/javascript-logo.png';
 import Reactlogo from '../../assets/react-logo.png';
 import ReactNativelogo from '../../assets/react-native-logo.png';
@@ -92,7 +93,20 @@ function Home() {
 
 
                 <footer className={styles.copyright} >
-                    © Copyright Devfrontwill - 2023 All rights reserved
+                    <div className={styles.social_container}>
+                        <h3> © Copyright Devfrontwill - 2023 All rights reserved </h3>
+                        <a className={styles.social} href="https://www.linkedin.com/in/devfrontwill">
+                            <BsLinkedin color='#FFF' size={24} />
+                        </a>
+
+                        <a className={styles.social} href="https://github.com/devfrontwill">
+                            <BsGithub color='#FFF' size={24} />
+                        </a>
+
+                        <a className={styles.social} href="https://instagram.com/wiliam.rozza">
+                            <BsInstagram color='#FFF' size={24} />
+                        </a>
+                    </div>
                 </footer>
 
 

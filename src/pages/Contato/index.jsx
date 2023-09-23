@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from '@emailjs/browser';
 import { PiCaretRightBold } from 'react-icons/pi';
+import { BsLinkedin, BsGithub, BsInstagram } from 'react-icons/bs';
 import styles from './styles.module.scss';
 import Menu from '../../components/Menu';
 
@@ -106,10 +107,25 @@ export default function Contato() {
                             color="#FFF"
                         />
                     </button>
-                    
+
                 </form>
 
-                <footer className={styles.copyright} >© Copyright Devfrontwill - 2023 All rights reserved</footer>
+                <footer className={styles.copyright} >
+                    <div className={styles.social_container}>
+                        <h3> © Copyright Devfrontwill - 2023 All rights reserved </h3>
+                        <a className={styles.social} href="https://www.linkedin.com/in/devfrontwill">
+                            <BsLinkedin color='#FFF' size={24} />
+                        </a>
+
+                        <a className={styles.social} href="https://github.com/devfrontwill">
+                            <BsGithub color='#FFF' size={24} />
+                        </a>
+
+                        <a className={styles.social} href="https://instagram.com/wiliam.rozza">
+                            <BsInstagram color='#FFF' size={24} />
+                        </a>
+                    </div>
+                </footer>
             </div>
         </>
     )
