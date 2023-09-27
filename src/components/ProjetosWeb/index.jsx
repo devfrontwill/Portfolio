@@ -2,7 +2,7 @@ import React from "react";
 import styles from './styles.module.scss';
 import work1 from '../../assets/webdevlink.png';
 import work2 from '../../assets/devspace.png';
-import work3 from '../../assets/calcimc.png';
+import voicegame from '../../assets/voice-game.png';
 import Button from "../Button";
 import Card from "../Card";
 
@@ -14,8 +14,6 @@ function ProjetosWeb() {
             <h1 className={styles.title} >
                 Projetos Web com JavaScript Vanilla e React
             </h1>
-            <span className={styles.subtitle}>Solving user & business problems since last 15+ years.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </span>
 
             <Card
                 title="DevLink Shortener"
@@ -32,11 +30,11 @@ function ProjetosWeb() {
             <Button title="Acessar Projeto" href={"https://github.com/devfrontwill/DevSpace"} />
 
             <Card
-                title="DevCalc IMC"
-                subtitle="Uma aplicação simples mas dinâmica feita apenas para praticar e exercitar o uso do Hook UseState do Reactjs, neste projeto eu criei uma calculadora de IMC com layout simples, porém responsivo."
-                image={work3}
+                title="Voice Command Game"
+                subtitle="Web App criado utilizando a Web Speech API para fazer a parte de reconhecimento de voz e a idéia foi explorar essa API configurando diversos comandos com Javascript. Dito isto criei um jogo de advinhação por reconhecimento de voz. Foi utilizado funções, feito validações e consumo da API. Foi feito também manipulação de dados, eventos e elementos com Javascript além da parte visual feita com Html e Css. Projeto encontra-se responsivo."
+                image={voicegame}
             />
-            <Button title="Acessar Projeto" href={"https://github.com/devfrontwill/calc-imc_reactjs"} />
+            <Button title="Acessar Projeto" href={"https://github.com/devfrontwill/Jogo-Reconhecimento-Por-Voz"} />          
 
         </section>
     )

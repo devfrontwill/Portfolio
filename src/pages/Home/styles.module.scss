@@ -59,9 +59,11 @@
             justify-content: center;
             padding-bottom: 2rem;
             margin-bottom: 2rem;
-            line-height: 20px;
+            line-height: 28px;
             letter-spacing: 2px;
             color: #9C9C9C;
+            font-weight: 600;
+            font-size: 18px;
         }
 
         .btn_container {
@@ -228,17 +230,21 @@
         font-size: 0.875rem;
         font-family: IBM Plex Mono;
         letter-spacing: 0.00875rem;
-        width: 100%;
+        width: 105vw;
         height: 4.375rem;
         flex-shrink: 0;
         background: #1B1B1B;
-    }
+    
 
-    .social_container {        
+    .social_container {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        h3 {
+            padding-left: 16px;
+        }
 
         .social {
             margin-left: 28px;
@@ -246,6 +252,8 @@
             align-items: center;
         }
     }
+}
+
 }
 
 
@@ -259,27 +267,30 @@
             margin: 1.5rem 1rem;
         }
 
-        @media screen and (max-width: 768px) {
-            .copyright {
-                width: 120vw;
-                margin-top: 27rem;
+        .copyright {
+            width: 120vw;
+            margin-top: 27rem;
+        }
+
+        .social_container{
+            .social{
+                margin-right: 12px;
             }
         }
     }
-
-
 }
 
-html::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
 
-html::-webkit-scrollbar-thumb {
-    border-radius: 50px;
-    background: #0721e7;
-}
+    html::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
 
-html::-webkit-scrollbar-track {
-    background: #080808;
-}
+    html::-webkit-scrollbar-thumb {
+        border-radius: 50px;
+        background: #0721e7;
+    }
+
+    html::-webkit-scrollbar-track {
+        background: #080808;
+    }

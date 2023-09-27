@@ -177,11 +177,13 @@ h3 {
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 6px;
 
         .social {
-            margin-left: 28px;
             display: flex;
             align-items: center;
+            margin-left: 12px;
+            
         }
     }
 }
@@ -192,12 +194,11 @@ h3 {
     }
 
     .copyright {
-        width: 130vw;
+        width: 112vw;
         padding-left: 2rem;
 
-        .social {
-            margin-left: 0px;
-            margin-right: 1.5rem;
+        .social_container .social{
+            margin-right: 8px;
         }
     }
 }
