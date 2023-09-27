@@ -179,6 +179,10 @@ h3 {
         align-items: center;
         gap: 6px;
 
+        h3 {
+            padding-left: 16px;
+        }
+
         .social {
             display: flex;
             align-items: center;
@@ -194,11 +198,13 @@ h3 {
     }
 
     .copyright {
-        width: 112vw;
-        padding-left: 2rem;
+        width: 120vw;
+        margin-top: 27rem;
+    }
 
-        .social_container .social{
-            margin-right: 8px;
+    .social_container{
+        .social{
+            margin-right: 12px;
         }
     }
 }

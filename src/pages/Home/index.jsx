@@ -3,7 +3,7 @@ import { LiaFileDownloadSolid } from 'react-icons/lia';
 import { PiCaretRightBold } from 'react-icons/pi';
 import styles from './styles.module.scss';
 import profile from '../../assets/profile.png';
-import currilum from '../../assets/curriculum.pdf';
+import curriculum from '../../assets/curriculum.pdf';
 import Menu from '../../components/Menu';
 import { BsLinkedin, BsGithub, BsInstagram, BsWhatsapp } from 'react-icons/bs';
 import Javascript from '../../assets/javascript-logo.png';
@@ -46,7 +46,7 @@ function Home() {
                             </span>
 
                             <div className={styles.btn_container} data-aos="fade-right" data-aos-delay="350" data-aos-duration="1000">
-                                <a href={currilum} download='currilum_devfrontwill={ Wiliam Roza }'>
+                                <a href={curriculum} download='currilum_devfrontwill={ Wiliam Roza }'>
                                     Baixar CV
                                     <LiaFileDownloadSolid
                                         className={styles.icon}
