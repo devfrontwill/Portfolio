@@ -19,7 +19,21 @@
         cursor: pointer;
 
         &:hover {
-            text-decoration: underline;            
+            text-decoration: underline;
+            transition: 0.3s;
+            color: #0721e7;
+            animation: shake .6s;
+        }
+
+
+    }
+
+    .social_item {
+        width: 5%;
+        margin-top: 1.3rem;
+        cursor: pointer;
+
+        &:hover {
             transition: 0.3s;
             color: #0721e7;
             animation: shake .6s;
@@ -50,5 +64,23 @@
     40%,
     60% {
         transform: translate3d(5px, 0, 0)
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container_list {
+
+        .social_item {
+            margin-right: 8px;
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .container_list {
+
+        .social_item {
+            margin-right: -120px;
+        }
     }
 }
