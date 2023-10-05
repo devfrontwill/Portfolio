@@ -1,11 +1,12 @@
 .container {
-    width: 100%;
+    width: 100vw;
     height: 266vh;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 30rem 0;
 
 
 
@@ -26,7 +27,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 130%;
+        width: 100%;
         margin: 7rem 0 2rem 7rem;
 
 
@@ -91,8 +92,8 @@
 
 
 @media screen and (max-width: 767px) {
-    .container{
-        padding-right: 9rem;
+    .container{        
+        padding: 29rem 0;
         margin-top: -13rem;
 
         .title{

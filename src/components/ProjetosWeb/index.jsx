@@ -3,6 +3,7 @@ import styles from './styles.module.scss';
 import work1 from '../../assets/webdevlink.png';
 import work2 from '../../assets/devspace.png';
 import voicegame from '../../assets/voice-game.png';
+import barbershop from '../../assets/barbershop.png';
 import Button from "../Button";
 import Card from "../Card";
 
@@ -34,7 +35,13 @@ function ProjetosWeb() {
                 subtitle="Web App criado utilizando a Web Speech API para fazer a parte de reconhecimento de voz e a idéia foi explorar essa API configurando diversos comandos com Javascript. Dito isto criei um jogo de advinhação por reconhecimento de voz. Foi utilizado funções, feito validações e consumo da API. Foi feito também manipulação de dados, eventos e elementos com Javascript além da parte visual feita com Html e Css. Projeto encontra-se responsivo."
                 image={voicegame}
             />
-            <Button title="Acessar Projeto" href={"https://github.com/devfrontwill/Jogo-Reconhecimento-Por-Voz"} />          
+            <Button title="Acessar Projeto" href={"https://github.com/devfrontwill/Jogo-Reconhecimento-Por-Voz"} />
+
+            <Card 
+            title="Barber Shop"
+            subtitle="O Barber Shop é uma landing page ficticia criada para praticar minhas habilidades com as tecnologias utilizadas neste projeto. Foi utilizado Reactjs para construção do projeto, utilizando ao maximo toda a versatilidade que esta biblioteca javascript nos proporciona. Foi utlizado Sass para fazer toda a estilização de forma otimizada e intuitiva. O site possui uma seção que mostra a localização do estabelecimento e para tal foi utilizado a APi do Google maps."
+            image={barbershop}
+            />
 
         </section>
     )
