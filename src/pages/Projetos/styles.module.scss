@@ -47,43 +47,7 @@
                 text-decoration: underline;
             }
         }
-    }
-
-    .btn_whatsapp{
-        position: fixed;
-        bottom: 14px;
-        right: 24px;
-        z-index: 99;
-    
-        img{
-            max-width: 74px;
-            transition: transform 0.4s;
-    
-            &:hover{
-                transform: scale(1.1);
-            }
-        }
-    }
-    
-    .btn_whatsapp .tooltip_text{
-        visibility: hidden;
-        position: absolute;
-        width: 120px;
-        top: 8px;
-        left: -144px;
-        padding: 6px;
-        border-radius: 8px;
-        text-align: center;
-        background-color: #808080;
-        color: #FFF;
-        opacity: 0;
-        transition: opacity 0.4s;
-    }
-    
-    .btn_whatsapp:hover .tooltip_text{
-        visibility: visible;
-        opacity: 1;
-    }
+    }   
 
     @media screen and (max-width: 768px) {
         .container_button {
@@ -96,9 +60,4 @@
                 margin-right: 1.5rem;
             }
         }
-
-        .btn_whatsapp{
-        max-width:64px;
-        left: 54px;
-    }
     }

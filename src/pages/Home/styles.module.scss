@@ -234,64 +234,25 @@
         height: 4.375rem;
         flex-shrink: 0;
         background: #1B1B1B;
-    
 
-    .social_container {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
-        h3 {
-            padding-left: 16px;
-        }
-
-        .social {
-            margin-left: 28px;
+        .social_container {
+            width: 100%;
             display: flex;
+            justify-content: center;
             align-items: center;
+
+            h3 {
+                padding-left: 16px;
+            }
+
+            .social {
+                margin-left: 28px;
+                display: flex;
+                align-items: center;
+            }
         }
     }
-}
-
-.btn_whatsapp{
-    position: fixed;
-    bottom: 14px;
-    right: 54px;
-    z-index: 99;
-
-    img{
-        max-width: 74px;
-        transition: transform 0.4s;
-
-        &:hover{
-            transform: scale(1.1);
-        }
-    }
-}
-
-.btn_whatsapp .tooltip_text{
-    visibility: hidden;
-    position: absolute;
-    width: 120px;
-    top: 8px;
-    left: -144px;
-    padding: 6px;
-    border-radius: 8px;
-    text-align: center;
-    background-color: #808080;
-    color: #FFF;
-    opacity: 0;
-    transition: opacity 0.4s;
-}
-
-.btn_whatsapp:hover .tooltip_text{
-    visibility: visible;
-    opacity: 1;
-}
-
-}
-
 
 @media screen and (max-width: 768px) {
     .container {
@@ -308,30 +269,25 @@
             margin-top: 27rem;
         }
 
-        .social_container{
-            .social{
+        .social_container {
+            .social {
                 margin-right: 12px;
             }
         }
     }
-
-    .btn_whatsapp{
-        max-width:64px;
-        left: 54px;
-    }
+}
 }
 
+html::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
 
-    html::-webkit-scrollbar {
-        width: 10px;
-        height: 10px;
-    }
+html::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #0721e7;
+}
 
-    html::-webkit-scrollbar-thumb {
-        border-radius: 50px;
-        background: #0721e7;
-    }
-
-    html::-webkit-scrollbar-track {
-        background: #080808;
-    }
+html::-webkit-scrollbar-track {
+    background: #080808;
+}

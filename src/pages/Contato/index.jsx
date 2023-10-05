@@ -3,8 +3,8 @@ import emailjs from '@emailjs/browser';
 import { PiCaretRightBold } from 'react-icons/pi';
 import { BsLinkedin, BsGithub, BsInstagram, BsWhatsapp } from 'react-icons/bs';
 import styles from './styles.module.scss';
-import whatsapp from '../../assets/whatsapp.svg';
 import Menu from '../../components/Menu';
+import ButtonZap from '../../components/ButtonZap';
 import Aos from "aos";
 import 'aos/dist/aos.css';
 
@@ -140,16 +140,7 @@ export default function Contato() {
                         </a>
                     </div>
 
-                    <a className={styles.btn_whatsapp}
-                        data-aos="zoom-in-up" data-aos-delay="400"
-                        href="https://api.whatsapp.com/send?phone=5521990556961&text=Ol%C3%A1,%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20!"
-                    >
-                        <img
-                            src={whatsapp}
-                            alt="Botao whatsapp"
-                        />
-                        <span className={styles.tooltip_text} > Olá, que tal iniciarmos uma conversa ? </span>
-                    </a>
+                    <ButtonZap />
                 </footer>
             </div>
         </>

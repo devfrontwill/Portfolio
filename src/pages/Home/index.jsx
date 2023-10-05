@@ -5,6 +5,7 @@ import styles from './styles.module.scss';
 import profile from '../../assets/profile.png';
 import curriculum from '../../assets/curriculum.pdf';
 import Menu from '../../components/Menu';
+import ButtonZap from "../../components/ButtonZap";
 import { BsLinkedin, BsGithub, BsInstagram, BsWhatsapp } from 'react-icons/bs';
 import Javascript from '../../assets/javascript-logo.png';
 import Reactlogo from '../../assets/react-logo.png';
@@ -15,7 +16,6 @@ import Github from '../../assets/github-logo.png';
 import Typescript from '../../assets/typescript-logo.png';
 import Scrum from '../../assets/scrum-logo.png';
 import StyledComponents from '../../assets/styled-logo.png';
-import whatsapp from '../../assets/whatsapp.svg';
 import Aos from "aos";
 import 'aos/dist/aos.css';
 
@@ -124,17 +124,8 @@ function Home() {
                             <BsWhatsapp color='#FFF' size={24} />
                         </a>
                     </div>
-                    
-                    <a className={styles.btn_whatsapp}
-                        data-aos="zoom-in-up" data-aos-delay="400"
-                        href="https://api.whatsapp.com/send?phone=5521990556961&text=Ol%C3%A1,%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20!"
-                    >
-                        <img
-                            src={whatsapp}
-                            alt="Botao whatsapp"
-                        />
-                        <span className={styles.tooltip_text} > Olá, que tal iniciarmos uma conversa ? </span>
-                    </a>
+
+                    <ButtonZap />             
                 </footer>
 
 
