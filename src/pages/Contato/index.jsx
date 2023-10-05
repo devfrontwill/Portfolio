@@ -3,9 +3,10 @@ import emailjs from '@emailjs/browser';
 import { PiCaretRightBold } from 'react-icons/pi';
 import { BsLinkedin, BsGithub, BsInstagram, BsWhatsapp } from 'react-icons/bs';
 import styles from './styles.module.scss';
+import whatsapp from '../../assets/whatsapp.svg';
 import Menu from '../../components/Menu';
 import Aos from "aos";
-import 'aos/dist/aos.css'; 
+import 'aos/dist/aos.css';
 
 
 
@@ -44,7 +45,7 @@ export default function Contato() {
     }
     Aos.init();
 
-    if (phoneNumber.length > 11){
+    if (phoneNumber.length > 11) {
         alert('Digite um número de telefone válido com 11 digitos incluindo o DDD');
 
         return setPhoneNumber('');
@@ -90,7 +91,7 @@ export default function Contato() {
                     <label htmlFor="tel">Telefone :</label>
                     <input
                         className={styles.input_field}
-                        type="number"                        
+                        type="number"
                         placeholder="Ex. 21987654321"
                         onChange={(e) => setPhoneNumber(e.target.value)}
                         value={phoneNumber}
@@ -138,6 +139,17 @@ export default function Contato() {
                             <BsWhatsapp color='#FFF' size={24} />
                         </a>
                     </div>
+
+                    <a className={styles.btn_whatsapp}
+                        data-aos="zoom-in-up" data-aos-delay="400"
+                        href="https://api.whatsapp.com/send?phone=5521990556961&text=Ol%C3%A1,%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20!"
+                    >
+                        <img
+                            src={whatsapp}
+                            alt="Botao whatsapp"
+                        />
+                        <span className={styles.tooltip_text} > Olá, que tal iniciarmos uma conversa ? </span>
+                    </a>
                 </footer>
             </div>
         </>
