@@ -42,7 +42,8 @@ function ProjetosWeb() {
             subtitle="O Barber Shop é uma landing page ficticia criada para praticar minhas habilidades com as tecnologias utilizadas neste projeto. Foi utilizado Reactjs para construção do projeto, utilizando ao maximo toda a versatilidade que esta biblioteca javascript nos proporciona. Foi utlizado Sass para fazer toda a estilização de forma otimizada e intuitiva. O site possui uma seção que mostra a localização do estabelecimento e para tal foi utilizado a APi do Google maps."
             image={barbershop}
             />
-
+            <Button title="Acessar Projeto" href={"https://github.com/devfrontwill/Landing-page-BarberShop"} />
+            
         </section>
     )
 }
