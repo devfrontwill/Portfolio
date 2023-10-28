@@ -133,11 +133,7 @@ export default function Contato() {
 
                         <a className={styles.social} target="_blank" href="https://instagram.com/wiliam.rozza">
                             <BsInstagram color='#FFF' size={24} />
-                        </a>
-
-                        <a className={styles.social} target="_blank" href="https://api.whatsapp.com/send?phone=5521990556961&text=Ol%C3%A1%20estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20seu%20Portf%C3%B3lio%20!">
-                            <BsWhatsapp color='#FFF' size={24} />
-                        </a>
+                        </a>                        
                     </div>
 
                     <ButtonZap />
