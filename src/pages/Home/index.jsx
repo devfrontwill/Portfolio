@@ -6,7 +6,7 @@ import profile from '../../assets/profile.png';
 import curriculum from '../../assets/curriculum.pdf';
 import Menu from '../../components/Menu';
 import ButtonZap from "../../components/ButtonZap";
-import { BsLinkedin, BsGithub, BsInstagram, BsWhatsapp } from 'react-icons/bs';
+import { BsLinkedin, BsGithub, BsInstagram } from 'react-icons/bs';
 import Javascript from '../../assets/javascript-logo.png';
 import Reactlogo from '../../assets/react-logo.png';
 import ReactNativelogo from '../../assets/react-native-logo.png';
@@ -47,7 +47,7 @@ function Home() {
                             </span>
 
                             <div className={styles.btn_container} data-aos="fade-right" data-aos-delay="350" data-aos-duration="1000">
-                                <a href={curriculum} download='currilum_devfrontwill={ Wiliam Roza }'>
+                                <a href={curriculum} download='curriculum_devfrontwill={ Wiliam Roza }'>
                                     Baixar CV
                                     <LiaFileDownloadSolid
                                         className={styles.icon}
