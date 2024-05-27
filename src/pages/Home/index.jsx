@@ -16,6 +16,9 @@ import Github from '../../assets/github-logo.png';
 import Typescript from '../../assets/typescript-logo.png';
 import Scrum from '../../assets/scrum-logo.png';
 import StyledComponents from '../../assets/styled-logo.png';
+import Firebase from '../../assets/Firebase.png';
+import TailwindCss from '../../assets/tailwind.png';
+import NodeJs from '../../assets/node.png';
 import Aos from "aos";
 import 'aos/dist/aos.css';
 
@@ -41,9 +44,9 @@ function Home() {
                                 Olá, me chamo Wiliam Roza
                             </h1>
                             <span className={styles.subtitle} data-aos="fade-left" data-aos-delay="350" data-aos-duration="1000">
-                                Estudante de Análise e Desenvolvimento de Sistemas pela Universidade IBMR, e autodidata, venho buscando conhecimento e praticando com cursos, livros e muita documentação das linguagens que utilizo nos meus projetos.
-                                Amante de tecnologia desde a adolescência, enxergo hoje a possibilidade de finalmente poder aprender e aplicar o que realmente amo e desejo seguir como carreira para minha vida profissional, e até mesmo como realização pessoal, pois poder exercer aquilo que se gosta é sem dúvidas gratificante.
-                                Busco entrar para o mercado de desenvolvimento Front-End Web/Mobile.
+                                Estudante de Análise e Desenvolvimento de Sistemas pela Universidade Anhanguera, e autodidata através de cursos da Alura e Sujeito Programador (Fábrica de aplicativos), além de obter conhecimento através de alguns livros fisicos como: Use a cabeça - Programação Javascript (Eric Freeman & Elisabeth Robson), Código Limpo (Robert C. Martin) e React Aprenda Praticando (Mauricio 'Maujor' Samy Silva) venho buscando conhecimento e praticando com cursos, livros e muita documentação das linguagens, que utilizo nos meus projetos.
+                                Amante de tecnologia desde a adolescência, enxergo hoje a possibilidade de finalmente poder aprender e aplicar o que realmente amo e desejo seguir como carreira para minha vida profissional, e até mesmo como realização pessoal, pois poder exercer aquilo que se gosta de fazer é sem dúvidas gratificante.
+                                Busco entrar para o mercado de desenvolvimento Front-End Web/Mobile, a procura da tão esperada primeira vaga.
                             </span>
 
                             <div className={styles.btn_container} data-aos="fade-right" data-aos-delay="350" data-aos-duration="1000">
@@ -99,6 +102,19 @@ function Home() {
                                 <li className={styles.footer_item} >
                                     <img className={styles.logo} alt="styled components logo" src={StyledComponents} />
                                 </li>
+                                <li className={styles.footer_item} >
+                                    <span style={{marginBottom: -5, marginTop: -10}}>FireBase</span>
+                                    <img className={styles.logo} alt="firebase logo" src={Firebase} />
+                                </li>
+                                <li className={styles.footer_item} >
+                                    <img className={styles.logo} alt="tailwind logo" src={TailwindCss} />
+                                </li>
+                                <li className={styles.footer_item} >
+                                    <span style={{marginBottom: -5, marginTop: -10}}>
+                                        NodeJs
+                                    <img className={styles.logo} alt="nodejs logo" src={NodeJs} />
+                                    </span>
+                                </li>
                             </ul>
                         </nav>
                     </section>
@@ -118,10 +134,10 @@ function Home() {
 
                         <a className={styles.social} target="_blank" href="https://instagram.com/wiliam.rozza">
                             <BsInstagram color='#FFF' size={24} />
-                        </a>                        
+                        </a>
                     </div>
 
-                    <ButtonZap />             
+                    <ButtonZap />
                 </footer>
 
 
