@@ -76,6 +76,7 @@ function Home() {
                         <nav>
                             <ul className={styles.container_footer} data-aos="zoom-in-up" data-aos-delay="350" data-aos-duration="1500">
                                 <li className={styles.footer_item} >
+                                    <span style={{ marginBottom: -5, marginTop: -10 }}>JavaScript</span>
                                     <img className={styles.logo} alt="javascript logo" src={Javascript} />
                                 </li>
                                 <li className={styles.footer_item} >
@@ -85,7 +86,17 @@ function Home() {
                                     <img className={styles.logo} alt="react native logo" src={ReactNativelogo} />
                                 </li>
                                 <li className={styles.footer_item} >
+                                    <span style={{ marginBottom: -5, marginTop: -10 }}>TypeScript</span>
+                                    <img className={styles.logo} alt="typescript logo" src={Typescript} />
+                                </li>
+                                <li className={styles.footer_item} >
                                     <img className={styles.logo} alt="sass logo" src={Sass} />
+                                </li>
+                                <li className={styles.footer_item} >
+                                    <img className={styles.logo} alt="styled components logo" src={StyledComponents} />
+                                </li>
+                                <li className={styles.footer_item} >
+                                    <img className={styles.logo} alt="tailwind logo" src={TailwindCss} />
                                 </li>
                                 <li className={styles.footer_item} >
                                     <img className={styles.logo} alt="git logo" src={Git} />
@@ -94,26 +105,18 @@ function Home() {
                                     <img className={styles.logo} alt="github logo" src={Github} />
                                 </li>
                                 <li className={styles.footer_item} >
-                                    <img className={styles.logo} alt="typescript logo" src={Typescript} />
+                                    <span style={{ marginBottom: -5, marginTop: -10 }}>FireBase</span>
+                                    <img className={styles.logo} alt="firebase logo" src={Firebase} />
+                                </li>
+
+                                <li className={styles.footer_item} >
+                                    <span style={{ marginBottom: -5, marginTop: -10 }}>
+                                        NodeJs
+                                        <img className={styles.logo} alt="nodejs logo" src={NodeJs} />
+                                    </span>
                                 </li>
                                 <li className={styles.footer_item} >
                                     <img className={styles.logo} alt="scrum agile logo" src={Scrum} />
-                                </li>
-                                <li className={styles.footer_item} >
-                                    <img className={styles.logo} alt="styled components logo" src={StyledComponents} />
-                                </li>
-                                <li className={styles.footer_item} >
-                                    <span style={{marginBottom: -5, marginTop: -10}}>FireBase</span>
-                                    <img className={styles.logo} alt="firebase logo" src={Firebase} />
-                                </li>
-                                <li className={styles.footer_item} >
-                                    <img className={styles.logo} alt="tailwind logo" src={TailwindCss} />
-                                </li>
-                                <li className={styles.footer_item} >
-                                    <span style={{marginBottom: -5, marginTop: -10}}>
-                                        NodeJs
-                                    <img className={styles.logo} alt="nodejs logo" src={NodeJs} />
-                                    </span>
                                 </li>
                             </ul>
                         </nav>
