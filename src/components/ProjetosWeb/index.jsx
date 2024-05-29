@@ -1,9 +1,10 @@
 import React from "react";
 import styles from './styles.module.scss';
 import work1 from '../../assets/webdevlink.png';
-import work2 from '../../assets/devspace.png';
 import voicegame from '../../assets/voice-game.png';
 import barbershop from '../../assets/barbershop.png';
+import formbank from '../../assets/formbank.png';
+import hamburgueria from '../../assets/hamburgueria.png';
 import Button from "../Button";
 import Card from "../Card";
 
@@ -24,11 +25,11 @@ function ProjetosWeb() {
             <Button title="Acessar Projeto" href={"https://github.com/devfrontwill/devlink-shortener"} />
 
             <Card
-                title="Dev Space"
-                subtitle="Dev Space é uma aplicação desenvolvida para um teste técnico de uma vaga de pessoa desenvolvedora front-end jr . Se trata de uma galeria de imagens criada para a empresa Alura com o objetivo de exibir as imagens incríveis que ela produz do universo observável. É uma aplicação estática, que possui apenas uma página inicial mas que é altamente escalável para adição de novas funcionalidades!"
-                image={work2}
+                title="Form Bank Landing Page"
+                subtitle="Uma landing page completa com um formulário de cadastro, feito validações dos campos e registro de foto obrigatório para conclusão do cadastro."
+                image={formbank}
             />
-            <Button title="Acessar Projeto" href={"https://github.com/devfrontwill/DevSpace"} />
+            <Button title="Acessar Projeto" href={"https://github.com/devfrontwill/FormBank"} />
 
             <Card
                 title="Voice Command Game"
@@ -37,13 +38,20 @@ function ProjetosWeb() {
             />
             <Button title="Acessar Projeto" href={"https://github.com/devfrontwill/Jogo-Reconhecimento-Por-Voz"} />
 
-            <Card 
-            title="Barber Shop"
-            subtitle="O Barber Shop é uma landing page ficticia criada para praticar minhas habilidades com as tecnologias utilizadas neste projeto. Foi utilizado Reactjs para construção do projeto, utilizando ao maximo toda a versatilidade que esta biblioteca javascript nos proporciona. Foi utlizado Sass para fazer toda a estilização de forma otimizada e intuitiva. O site possui uma seção que mostra a localização do estabelecimento e para tal foi utilizado a APi do Google maps."
-            image={barbershop}
+            <Card
+                title="Hamburgueria"
+                subtitle="Protótipo feito para uma Hamburgueria, feito com Html, TailwindCss e JavaScript Vanilla, encontra-se responsivo e totalmente funcional com carrinho de compras e envio para Whatsapp da 'loja'."
+                image={hamburgueria}
+            />
+            <Button title="Acessar Projeto" href={"https://github.com/devfrontwill/my-store"} />
+
+            <Card
+                title="Barber Shop"
+                subtitle="O Barber Shop é uma landing page ficticia criada para praticar minhas habilidades com as tecnologias utilizadas neste projeto. Foi utilizado Reactjs para construção do projeto, utilizando ao maximo toda a versatilidade que esta biblioteca javascript nos proporciona. Foi utlizado Sass para fazer toda a estilização de forma otimizada e intuitiva. O site possui uma seção que mostra a localização do estabelecimento e para tal foi utilizado a APi do Google maps."
+                image={barbershop}
             />
             <Button title="Acessar Projeto" href={"https://github.com/devfrontwill/Landing-page-BarberShop"} />
-            
+
         </section>
     )
 }

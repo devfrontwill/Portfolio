@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 99vw;
+    width: 100%;
     margin: 7rem 0 2rem 6.3rem;
 
 
@@ -33,7 +33,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30rem;
+    width: 50%;
     flex-direction: column;
 
 
@@ -52,7 +52,7 @@
     overflow: hidden;
     border-radius: 8px;
     margin-bottom: 2rem;
-    
+
 
     img {
         width: 490px;
@@ -63,15 +63,27 @@
         border-radius: 7px;
         margin-bottom: -2.5rem;
 
-        &:hover {            
-            transform: scale(1.5);            
+        &:hover {
+            transform: scale(1.5);
         }
     }
 }
 
 @media screen and (max-width: 768px) {
     .container__work {
-        padding-left: 3rem;        
+        width: 80%;
+        margin-left: 3.5rem;
+
     }
 
+    .subtitle__work {
+        width: 100%;
+
+    }
+
+    .container__img{
+        img{
+            width: 100%;
+        }
+    }
 }
