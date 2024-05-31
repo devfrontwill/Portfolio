@@ -1,6 +1,5 @@
 import React from "react";
 import styles from './styles.module.scss';
-import work3 from '../../assets/calcimc.png';
 import logoprime from '../../assets/devprime.png';
 import logolink from '../../assets/devlink.png';
 import playstorebtn from '../../assets/googleplay.png';

@@ -193,7 +193,23 @@ h3 {
 
 @media screen and (max-width: 768px) {
     .form_container {
-        margin: 0 1rem;
+        margin-left: -1.5rem;
+
+        label{
+            margin-left: 3.5rem;
+        }
+
+        .input_field{
+            width: 80%;
+        }
+
+        .input_msg{
+            width: 80%;
+        }
+
+        .btn_submit{
+            width: 90%;
+        }
     }
 
     .copyright {
