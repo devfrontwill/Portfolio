@@ -44,7 +44,7 @@ function Home() {
                                 Olá, me chamo Wiliam Roza
                             </h1>
                             <span className={styles.subtitle} data-aos="fade-left" data-aos-delay="350" data-aos-duration="1000">
-                                Estudante de Análise e Desenvolvimento de Sistemas pela Universidade Anhanguera, e autodidata através de cursos da Alura e Sujeito Programador (Fábrica de aplicativos), além de obter conhecimento através de alguns livros fisicos como: Use a cabeça - Programação Javascript (Eric Freeman & Elisabeth Robson), Código Limpo (Robert C. Martin) e React Aprenda Praticando (Mauricio 'Maujor' Samy Silva) venho buscando conhecimento e praticando com cursos, livros e muita documentação das linguagens, que utilizo nos meus projetos.
+                                Estudante de Engenharia de Software pela Universidade Estácio de Sá, e autodidata através de cursos da Alura e Sujeito Programador (Fábrica de aplicativos). Venho buscando conhecimento e praticando com cursos, livros e muita documentação das linguagens, que utilizo nos meus projetos.
                                 Amante de tecnologia desde a adolescência, enxergo hoje a possibilidade de finalmente poder aprender e aplicar o que realmente amo e desejo seguir como carreira para minha vida profissional, e até mesmo como realização pessoal, pois poder exercer aquilo que se gosta de fazer é sem dúvidas gratificante.
                                 Busco entrar para o mercado de desenvolvimento Front-End Web/Mobile, a procura da tão esperada primeira vaga.
                             </span>
