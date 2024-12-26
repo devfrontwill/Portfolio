@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './styles.module.scss';
 import logoprime from '../../assets/devprime.png';
-import logolink from '../../assets/devlink.png';
+import logoDevCars from '../../assets/logodevcars.png'
 import playstorebtn from '../../assets/googleplay.png';
 import Button from "../Button";
 import CardMobile from "../CardMobile";
@@ -22,18 +22,21 @@ function ProjetosMobile() {
             />
             <Button title="Acessar Projeto" href={"https://github.com/devfrontwill/AndroidApp-Dev-Prime-Movie-Guide"} />
 
-            <a className= {styles.container__btn} href="https://play.google.com/store/apps/details?id=com.devfrontwill.appmovies" target="_blank" >
+            <a className={styles.container__btn} href="https://play.google.com/store/apps/details?id=com.devfrontwill.appmovies" target="_blank" >
                 <img className={styles.btn} src={playstorebtn} />
             </a>
 
             <CardMobile
-                title="DevLink Shortener"
-                subtitle="DevLink Shortener é uma aplicação desenvolvida para que o usuário possa obter links encurtados com o objetivo de facilitar o uso de links extensos, seja para mostrar em um perfil de rede social ou afins. É uma aplicação dinâmica, que possui uma tela inicial onde o usuário pode digitar ou colar o seu link que deseja encurtar, feito isso todo link encurtado é automaticamente armazenado na seção Meus Links onde o usuário consegue consultar a lista de links encurtados que ali ficam salvos, também é possivel deletar os links encurtados salvos que não forem mas utilizados. Foi utilizado a API do bit.ly, porém por ser FREE tem um baixo limite quantitativo para encurtamento de links."
-                image={logolink}
+                title="DevCars App"
+                subtitle="Dev Cars App é uma aplicação de compra e venda entre usuarios cadastrados.
+                            Compre, venda, pesquise os preços atuais do mercado com base nos anuncios de outros usuarios.
+                            Cadastre seu veiculo com o maximo de descrição possivel para facilitar o entendimento de terceiros e assim conseguir alcançar a venda de forma mais rápida e eficaz.
+                            Junte-se aos outros usuarios e faça parte desta comunidade totalmente grátis e sem anuncios ."
+                image={logoDevCars}
             />
-            <Button title="Acessar Projeto" href={"https://github.com/devfrontwill/AndroidApp-DevLink-Shortener"} />
+            <Button title="Acessar Projeto" href={"https://github.com/devfrontwill/DevCars-SemiNovos-App"} />
 
-            <a className= {styles.container__btn} href="https://play.google.com/store/apps/details?id=com.devfrontwill.devlinkshortenerapp" target="_blank" >
+            <a className={styles.container__btn} href="https://play.google.com/store/apps/details?id=com.devfrontwill.DevCars_SemiNovos" target="_blank" >
                 <img className={styles.btn} src={playstorebtn} />
             </a>
 
