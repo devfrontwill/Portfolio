@@ -3,6 +3,7 @@ import styles from './styles.module.scss';
 import logoprime from '../../assets/devprime.png';
 import logoDevCars from '../../assets/logodevcars.png'
 import playstorebtn from '../../assets/googleplay.png';
+import devauth from '../../assets/devauth.png';
 import Button from "../Button";
 import CardMobile from "../CardMobile";
 
@@ -37,6 +38,17 @@ function ProjetosMobile() {
             <Button title="Acessar Projeto" href={"https://github.com/devfrontwill/DevCars-SemiNovos-App"} />
 
             <a className={styles.container__btn} href="https://play.google.com/store/apps/details?id=com.devfrontwill.DevCars_SemiNovos" target="_blank" >
+                <img className={styles.btn} src={playstorebtn} />
+            </a>
+
+            <CardMobile
+                title="Dev Auth (supabase)"
+                subtitle="Dev Auth com Supabase é um App no qual eu criei um sistema de autenticação de usuario utilizando os serviços de autenticação do Supabase, além de implementar e configurar a confirmação de email pós cadastro, para garantir que o usuario se cadastre na aplicação utilizando um email válido. Neste App temos um fluxo de criação de conta com validação via email, Após temos uma tela de login para faze-lo utilizando suas credenciais cadastradas no App e após fazer o login o usuario vai para o que seria a tela de Perfil do usuario logado, com um botão para fazer logoff e retornar a tela de login."
+                image={devauth}
+            />
+            <Button title="Acessar Projeto" href={"https://github.com/devfrontwill/App-Auth-Supabase"} />
+
+            <a className={styles.container__btn} href="https://play.google.com/store/apps/details?id=com.devfrontwill.AppAuthsupabase" target="_blank" >
                 <img className={styles.btn} src={playstorebtn} />
             </a>
 
